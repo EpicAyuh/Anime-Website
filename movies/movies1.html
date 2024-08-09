@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming</title>
+    
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 1rem;
+}
+
+.logo {
+    height: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.video-section {
+    flex: 3;
+    margin-right: 1rem;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul li a {
+    color: #00ccff;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .video-section {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar {
+        margin-bottom: 1rem;
+    }
+}
+
+.episode-list {
+    width: 375px;
+    margin-left: 0px;
+    background-color: #222;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .episode {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    cursor: pointer;
+  }
+
+  .episode-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  .episode-title {
+    font-size: 14px;
+  }
+  
+a{
+    text-decoration: none;
+    color: white;
+}
+.co{
+  color: yellow;
+}
+
+
+</style>
+<body>
+    <header>
+        <b class="logo" > Magic </b>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Movie</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="video-section">
+            <video controls controlslist="nodownload">
+                <source src="/moviesa/5Per Sec.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>5 Centimeters per Second</h2>
+            <p>Told in three interconnected segments, Takaki tells the story of his life as cruel winters, cold technology, and finally, adult obligations and responsibility converge to test the delicate petals of love.            </p>
+            <hr>
+            <p>Director : <a class="co" href="https://en.wikipedia.org/wiki/Makoto_Shinkai" target="_blank"> Makoto Shinkai </a></p>
+            <hr>
+            <p>Writer :
+             <a class="co" href="https://en.wikipedia.org/wiki/Makoto_Shinkai" target="_blank">Makoto Shinkai </a> </p>
+             <hr>
+             <p>Stars :
+              <a class="co" href=""> Kenji MizuhashiYoshimi KondouSatomi Hanamura </a></p>
+        </div>
+
+        
+            <div class="episode-list">
+                <!-- <input type="text" class="search-bar" placeholder="Search episodes..."> -->
+                <div class="episode">
+                  <a href="/Movie/movie-details.html"><img class="episode-image" src="/assets/images/movie-1.png" alt="Weathering with You
+                   ">
+                   <div class="episode-title">5 cem Per second
+                   </a></div>
+                 </div>
+                <div class="episode">
+                 <a href="/Movie/movie-details1.html"><img class="episode-image" src="/assets/images/movie-2.png" alt="Weathering with You
+                  ">
+                  <div class="episode-title">Weathering with You
+                  </a></div>
+                </div>
+                <div class="episode">
+                  <a href="/Movie/movie-details5.html"><img class="episode-image" src="/assets/images/movie-6.png" alt="I want to eat your pancreas">
+                  <div class="episode-title">I want to eat your pancreas</a></div>
+                </div>
+                <div class="episode">
+                  <a href="/Movie/movie-details3.html"><img class="episode-image" src="/assets/images/movie-4.png" alt="Your Name">
+                  <div class="episode-title">Your Name</a></div>
+                </div>
+                <div class="episode">
+                  <a href="/Movie/movie-details2.html"><img class="episode-image" src="/assets/images/movie-3.png" alt="My Oni Girl">
+                  <div class="episode-title">My Oni Girl</a></div>
+                </div>
+                <div class="episode">
+                  <a href="/Movie/movie-details7.html"><img class="episode-image" src="/assets/images/movie-8.png" alt="Black Clover">
+                  <div class="episode-title">Black Clover</a></div>
+                </div>
+                <div class="episode">
+                  <a href="/Movie/movie-details6.html"><img class="episode-image" src="/assets/images/bg7.jpg" alt="Naruto shippuden the Movie">
+                  <div class="episode-title">Naruto Shippuden the Movie</a></div>
+                </div>
+                <div class="episode">
+                  <a href="/Movie/movie-details4.html"><img class="episode-image" src="/assets/images/movie-5.png" alt="Hello Worlds">
+                  <div class="episode-title">Hello world</a></div>
+                </div>
+              </div>
+            </div>
+           
+            
+          </div>
+        </aside>
+    </main>
+    
+    <script src="javac.js"></script>
+</body>
+</html>
